@@ -29,9 +29,9 @@ public class ErrorValidationTest extends BaseTest {
         wait.until(ExpectedConditions.alertIsPresent());
         String validation = driver.switchTo().alert().getText();
 
-        Assert.assertEquals("User does not exist.", validation);
+        Assert.assertEquals("Test User does not exist.", validation);
 
-
+        driver.switchTo().alert().accept();
 
        }
 
